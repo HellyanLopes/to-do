@@ -1,0 +1,13 @@
+.containerLista{
+            max-width: 400px; /* Define a largura máxima da div */
+			margin: auto; /* Define as margens horizontal e vertical como "auto" */
+			padding: 20px; /* Adiciona um espaço interno para o conteúdo */
+			border: 1px solid #ccc; /* Adiciona uma borda para destacar o formulário */
+}
+
+.titulo{
+    max-width: 400px; /* Define a largura máxima da div */
+			margin: auto; /* Define as margens horizontal e vertical como "auto" */
+			padding: 20px; /* Adiciona um espaço interno para o conteúdo */
+			border: 1px solid #ccc; /* Adiciona uma borda para destacar o formulário */
+}
