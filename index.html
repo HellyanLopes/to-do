@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>To-DO</title>
-</head>
-<body>
-    <h1 class="titulo">To do list</h1>
-    <div class="containerLista">
-    <ul id="todo-list" class="text-div" class="added">
-        
-    </ul>
+    <link rel="android-touch-icon" sizes="192x192" href="img/favicon/android-chrome-192x192.png">
+    <link rel="android-touch-icon" sizes="592x592" href="img/favicon/android-chrome-512x512.png">
 
-    <form onsubmit="addTask(); return false;" >
-        <input type="text" id="new-task" placeholder="Adicionar tarefa">
-        <button type="submit">Adicionar</button>
+
+    <title> Minha Lista de Tarefas</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1 class="titulo" >Minha Lista de Tarefas</h1>
+    <form>
+      <input type="text" id="taskInput" placeholder="Adicionar nova tarefa">
+      <button type="submit" id="addButton">Adicionar</button>
     </form>
-    </div>
+    <ul id="taskList">
+    </ul>
+    <button id="removeButton">Remover tarefas concluídas</button>
 
-<script src="js/adicionarlista.js"></script>
-<script src="js/horario.js"></script>
-</body>
+    <div id='calendar'></div>
+
+    <script src="js/adicionarlista.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/index.global.min.js'></script>
+    <script src="js/calendario.js"></script>
+  </body>
 </html>
